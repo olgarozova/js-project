@@ -1,0 +1,38 @@
+body {
+    background: lightblue;
+}
+
+header{
+    display: flex;
+    width: 1200px;
+    background: beige;
+    margin: 20px auto;
+    padding: 15px;
+    align-items: center;
+}
+
+header img{
+    width: 200px;
+}
+
+header nav ul{
+    display: flex;
+}
+#menu-nav li{
+    display: flex;
+    list-style: none;
+}
+#menu-nav li a{
+    color: green;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu-nav li a:hover{
+    background: royalblue;
+    color: white;
+}
