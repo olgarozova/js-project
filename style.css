@@ -5,30 +5,29 @@ ul,body{
     padding: 0;
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+#page,header{
+    max-width: 1200px;
+    margin: 0px auto 15px auto;
+   
+}
 
 header{
     display: flex;
-    max-width: 1200px;
-    background: beige;
-    margin: 20px auto;
-    padding: 15px;
     align-items: center;
+    padding: 15px;
+    background: beige;
 }
 header img{
     margin: 0 15px 0 0;
 }
 
-@media (max-width: 720px){
-    header{ 
-        flex-direction: column;
-    }
-    header nav ul{
-        flex-direction: column;
-    }
-    header img{
-        margin: 0 0 15px 0;
-    }
-}
+
 
 header img{
     width: 200px;
@@ -39,9 +38,7 @@ header nav ul{
     flex-wrap: wrap;
 
 }
-#menu-nav li{
-    list-style: none;
-}
+
 #menu-nav li a{
     color: green;
     text-decoration: none;
@@ -57,3 +54,54 @@ header nav ul{
     background: royalblue;
     color: white;
 }
+
+#page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product img{
+    width: 100px;
+} 
+p{
+    color: cornflowerblue;
+}
+aside,main{
+    border: 1px solid;
+    background: beige;
+}
+aside{
+    width: 20%;
+    
+   /* box-shadow: 0 0 4px 3px yellow;*/
+
+}
+main{
+    width: 78%;
+    /*box-shadow: 0 0 4px 3px yellow;*/
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+
+}
+.product{
+    width: 32%;
+}
+
+
+
+
+@media (max-width: 720px){
+    header{ 
+        flex-direction: column;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header img{
+        margin: 0 0 15px 0;
+    }
+}
+
